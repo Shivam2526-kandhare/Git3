@@ -1,0 +1,220 @@
+Shivam@LAPTOP-31FL9QV1 MINGW64 ~DesktopPractical Practice FolderWADGit
+$ git config --global user.name Shivam2526-kandhare
+
+Shivam@LAPTOP-31FL9QV1 MINGW64 ~DesktopPractical Practice FolderWADGit
+$ git config --global user.email 20113026@pvgcoet.ac.in
+
+Shivam@LAPTOP-31FL9QV1 MINGW64 ~DesktopPractical Practice FolderWADGit
+$ git config -l
+diff.astextplain.textconv=astextplain
+filter.lfs.clean=git-lfs clean -- %f
+filter.lfs.smudge=git-lfs smudge -- %f
+filter.lfs.process=git-lfs filter-process
+filter.lfs.required=true
+http.sslbackend=openssl
+http.sslcainfo=CProgram FilesGitmingw64sslcertsca-bundle.crt
+core.autocrlf=true
+core.fscache=true
+core.symlinks=true
+pull.rebase=false
+credential.helper=manager
+credential.httpsdev.azure.com.usehttppath=true
+init.defaultbranch=master
+user.email=20113026@pvgcoet.ac.in
+user.name=Shivam2526-kandhare
+
+Shivam@LAPTOP-31FL9QV1 MINGW64 ~DesktopPractical Practice FolderWADGit
+$ touch Krishna.txt
+
+Shivam@LAPTOP-31FL9QV1 MINGW64 ~DesktopPractical Practice FolderWADGit
+$ git Status
+fatal cannot handle Status as a builtin
+
+Shivam@LAPTOP-31FL9QV1 MINGW64 ~DesktopPractical Practice FolderWADGit
+$ git status
+fatal not a git repository (or any of the parent directories) .git
+
+Shivam@LAPTOP-31FL9QV1 MINGW64 ~DesktopPractical Practice FolderWADGit
+$ git init
+Initialized empty Git repository in CUsersShivamDesktopPractical Practice FolderWADGit.git
+
+Shivam@LAPTOP-31FL9QV1 MINGW64 ~DesktopPractical Practice FolderWADGit (master)
+$ git -v
+git version 2.39.2.windows.1
+
+Shivam@LAPTOP-31FL9QV1 MINGW64 ~DesktopPractical Practice FolderWADGit (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files
+  (use git add file... to include in what will be committed)
+        Git-Wad-main
+        Krishna.txt
+
+nothing added to commit but untracked files present (use git add to track)
+
+Shivam@LAPTOP-31FL9QV1 MINGW64 ~DesktopPractical Practice FolderWADGit (master)
+$ git add .
+warning in the working copy of 'Git-Wad-mainabc.txt', LF will be replaced by CRLF the next time Git touches it
+
+Shivam@LAPTOP-31FL9QV1 MINGW64 ~DesktopPractical Practice FolderWADGit (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed
+  (use git rm --cached file... to unstage)
+        new file   Git-Wad-mainabc.txt
+        new file   Krishna.txt
+
+
+Shivam@LAPTOP-31FL9QV1 MINGW64 ~DesktopPractical Practice FolderWADGit (master)
+$ git remote add origin httpsgithub.comShivam2526-kandhareGIT_2.git
+
+Shivam@LAPTOP-31FL9QV1 MINGW64 ~DesktopPractical Practice FolderWADGit (master)
+$ git commit -m First Commit
+[master (root-commit) b654cea] First Commit
+ 2 files changed, 3 insertions(+)
+ create mode 100644 Git-Wad-mainabc.txt
+ create mode 100644 Krishna.txt
+
+Shivam@LAPTOP-31FL9QV1 MINGW64 ~DesktopPractical Practice FolderWADGit (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Shivam@LAPTOP-31FL9QV1 MINGW64 ~DesktopPractical Practice FolderWADGit (master)
+$ git push -u origin master
+Enumerating objects 5, done.
+Counting objects 100% (55), done.
+Delta compression using up to 4 threads
+Compressing objects 100% (22), done.
+Writing objects 100% (55), 365 bytes  91.00 KiBs, done.
+Total 5 (delta 0), reused 0 (delta 0), pack-reused 0
+To httpsgithub.comShivam2526-kandhareGIT_2.git
+  [new branch]      master - master
+branch 'master' set up to track 'originmaster'.
+
+Shivam@LAPTOP-31FL9QV1 MINGW64 ~DesktopPractical Practice FolderWADGit (master)
+$ git branch branch1
+
+Shivam@LAPTOP-31FL9QV1 MINGW64 ~DesktopPractical Practice FolderWADGit (master)
+$ git branch branch2
+
+Shivam@LAPTOP-31FL9QV1 MINGW64 ~DesktopPractical Practice FolderWADGit (master)
+$ git branch -l
+  branch1
+  branch2
+ master
+
+Shivam@LAPTOP-31FL9QV1 MINGW64 ~DesktopPractical Practice FolderWADGit (master)
+$ git branch branch3
+
+Shivam@LAPTOP-31FL9QV1 MINGW64 ~DesktopPractical Practice FolderWADGit (master)
+$ git branch -d branch3
+Deleted branch branch3 (was b654cea).
+
+Shivam@LAPTOP-31FL9QV1 MINGW64 ~DesktopPractical Practice FolderWADGit (master)
+$ git branch -l
+  branch1
+  branch2
+ master
+
+Shivam@LAPTOP-31FL9QV1 MINGW64 ~DesktopPractical Practice FolderWADGit (master)
+$ git checkout branch2
+Switched to branch 'branch2'
+
+Shivam@LAPTOP-31FL9QV1 MINGW64 ~DesktopPractical Practice FolderWADGit (branch2)
+$ git -ls
+unknown option -ls
+usage git [-v  --version] [-h  --help] [-C path] [-c name=value]
+           [--exec-path[=path]] [--html-path] [--man-path] [--info-path]
+           [-p  --paginate  -P  --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=path] [--work-tree=path] [--namespace=name]
+           [--super-prefix=path] [--config-env=name=envvar]
+           command [args]
+
+Shivam@LAPTOP-31FL9QV1 MINGW64 ~DesktopPractical Practice FolderWADGit (branch2)
+$ touch bran2.txt
+
+Shivam@LAPTOP-31FL9QV1 MINGW64 ~DesktopPractical Practice FolderWADGit (branch2)
+$ git add .
+
+Shivam@LAPTOP-31FL9QV1 MINGW64 ~DesktopPractical Practice FolderWADGit (branch2)
+$ git status
+On branch branch2
+Changes to be committed
+  (use git restore --staged file... to unstage)
+        new file   bran2.txt
+
+
+Shivam@LAPTOP-31FL9QV1 MINGW64 ~DesktopPractical Practice FolderWADGit (branch2)
+$ git commit -m Branch 2
+[branch2 6c9a456] Branch 2
+ 1 file changed, 1 insertion(+)
+ create mode 100644 bran2.txt
+
+Shivam@LAPTOP-31FL9QV1 MINGW64 ~DesktopPractical Practice FolderWADGit (branch2)
+$ git push -u origin branch2
+Enumerating objects 4, done.
+Counting objects 100% (44), done.
+Delta compression using up to 4 threads
+Compressing objects 100% (22), done.
+Writing objects 100% (33), 333 bytes  166.00 KiBs, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+remote
+remote Create a pull request for 'branch2' on GitHub by visiting
+remote      httpsgithub.comShivam2526-kandhareGIT_2pullnewbranch2
+remote
+To httpsgithub.comShivam2526-kandhareGIT_2.git
+  [new branch]      branch2 - branch2
+branch 'branch2' set up to track 'originbranch2'.
+
+Shivam@LAPTOP-31FL9QV1 MINGW64 ~DesktopPractical Practice FolderWADGit (branch2)
+$ git branch -m master
+fatal a branch named 'master' already exists
+
+Shivam@LAPTOP-31FL9QV1 MINGW64 ~DesktopPractical Practice FolderWADGit (branch2)
+$ git branch master
+fatal a branch named 'master' already exists
+
+Shivam@LAPTOP-31FL9QV1 MINGW64 ~DesktopPractical Practice FolderWADGit (branch2)
+$ git branch -m master
+fatal a branch named 'master' already exists
+
+Shivam@LAPTOP-31FL9QV1 MINGW64 ~DesktopPractical Practice FolderWADGit (branch2)
+$ git checkout
+Your branch is up to date with 'originbranch2'.
+
+Shivam@LAPTOP-31FL9QV1 MINGW64 ~DesktopPractical Practice FolderWADGit (branch2)
+$ git switch
+fatal missing branch or commit argument
+
+Shivam@LAPTOP-31FL9QV1 MINGW64 ~DesktopPractical Practice FolderWADGit (branch2)
+$ git switch master
+Switched to branch 'master'
+Your branch is up to date with 'originmaster'.
+
+Shivam@LAPTOP-31FL9QV1 MINGW64 ~DesktopPractical Practice FolderWADGit (master)
+$ git branch -m branch1 newBranch1
+
+Shivam@LAPTOP-31FL9QV1 MINGW64 ~DesktopPractical Practice FolderWADGit (master)
+$ git branch -l
+  branch2
+ master
+  newBranch1
+
+Shivam@LAPTOP-31FL9QV1 MINGW64 ~DesktopPractical Practice FolderWADGit (master)
+$ git merge branch2
+Updating b654cea..6c9a456
+Fast-forward
+ bran2.txt  1 +
+ 1 file changed, 1 insertion(+)
+ create mode 100644 bran2.txt
+
+Shivam@LAPTOP-31FL9QV1 MINGW64 ~DesktopPractical Practice FolderWADGit (master)
+$ git pull origin master
+fatal unable to access 'httpsgithub.comShivam2526-kandhareGIT_2.git' Could not resolve host github.com
